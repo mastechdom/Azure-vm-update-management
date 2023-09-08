@@ -114,7 +114,7 @@ Here is a *partial* screenshot of deployed resources:
 
 * Prerequisites:
 
-# Step-by-step user guide [video]()
+# Step-by-step user guide [video](https://drive.google.com/file/d/1fb2LIi4GCYfOMVR4a8SjO5t1i5L68z3c/view?usp=drive_link)
 
 ```bash
 
