@@ -113,8 +113,10 @@ Here is a *partial* screenshot of deployed resources:
 **Quick start:**
 
 * Prerequisites:
-```bash
+
 # Step-by-step user guide [video]()
+
+```bash
 
 # Clone the repo with following command
 
