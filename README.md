@@ -121,6 +121,17 @@ Here is a *partial* screenshot of deployed resources:
 # Clone the repo with following command
 
 $ git clone https://github.com/mastechdom/Azure-vm-update-management.git
+
+...
+#Then I run 
+$ cd terraform
+
+$ terraform fmt
+$ terraform init
+$ terraform plan
+$ terraform validate
+$ trraform apply
+
 ...
 $ cd Azure-vm-update-management/bicep
 ```
