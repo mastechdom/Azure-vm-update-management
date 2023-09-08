@@ -154,4 +154,5 @@ Infrastructure deployment will take around 5 minutes and it can take until 20 mi
 
 # Output images
 (https://drive.google.com/file/d/1v8OeGX98JJfQCQ_bbkB4JGKU_dBqcThX/view?usp=drive_link)
+(https://drive.google.com/file/d/1Z4nZ0Oo-eBKTN5CkQVEA9oiI1rZtmWoh/view?usp=drive_link)
 
