@@ -151,3 +151,7 @@ $ az deployment group create --resource-group MyRg --template-file main.bicep --
 ```
 Infrastructure deployment will take around 5 minutes and it can take until 20 minutes to have update agent ready and first patching assessment. 
 
+
+# Output images
+(https://drive.google.com/file/d/1v8OeGX98JJfQCQ_bbkB4JGKU_dBqcThX/view?usp=drive_link)
+
