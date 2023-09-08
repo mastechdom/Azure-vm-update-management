@@ -123,7 +123,8 @@ Here is a *partial* screenshot of deployed resources:
 $ git clone https://github.com/mastechdom/Azure-vm-update-management.git
 
 ...
-#Then I run 
+#Then I run terrraform script to connnect azure account
+
 $ cd terraform
 
 $ terraform fmt
@@ -133,6 +134,8 @@ $ terraform validate
 $ trraform apply
 
 ...
+#Then run bicep file to deploye
+
 $ cd Azure-vm-update-management/bicep
 ```
 
