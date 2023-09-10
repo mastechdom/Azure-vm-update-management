@@ -5,7 +5,7 @@ This repo is a set of Runbooks that allows you to schedule Azure Virtual Machine
 ## Features
 
 Shared Runbooks allows you to:
-* Patch **Azure Virtual Machines** and **Azure Arc Servers** with [Supported OS](https://docs.microsoft.com/en-us/azure/automation/update-management/operating-system-requirements#supported-operating-systems)
+* Patch **Azure Virtual Machines** with [Supported OS](https://docs.microsoft.com/en-us/azure/automation/update-management/operating-system-requirements#supported-operating-systems)
 * Patch in a multi-subscriptions context: the system-assigned managed identity must have **Contributor** role assigned on each subscription.
 * Perform several pre and post patching tasks:
   * Pre scripts, before patching:
@@ -29,10 +29,10 @@ There is a set of 5 Runbooks that must be deployed in the Automation Account:
 * **UM-CleanUp-Schedules**: Must be schedule (at least) daily. It removes Update Management schedules for VM machines that not longer have the `POLICY_UPDATE` tag
 
 ## Prerequisites
-  - Azure account
+  - Create an Azure account
   - install Azure cli
   - install bicep
-  - install terraform
+
 Automation Account must have the following modules installed:
 * Az.ResourceGraph, >= 0.11.0
 * Az.ConnectedMachine >= 0.2.0
@@ -64,7 +64,7 @@ Here is a *partial* screenshot of deployed resources:
 
 **Quick start:**
 
-# Step-by-step user guide [video](https://drive.google.com/file/d/1fb2LIi4GCYfOMVR4a8SjO5t1i5L68z3c/view?usp=drive_link)
+# Step-by-step user guide [video]()
 
 ```bash
 
@@ -73,39 +73,18 @@ Here is a *partial* screenshot of deployed resources:
 $ git clone https://github.com/mastechdom/Azure-vm-update-management.git
 
 ...
-#Then I run terrraform script to connnect azure account
-
-$ cd terraform
-
-$ terraform fmt
-$ terraform init
-$ terraform plan
-$ terraform validate
-$ trraform apply
-
-...
 #Then run bicep file to deploye
 
-$ cd Azure-vm-update-management/bicep
+$ cd Azure-vm-update-management-with-tags/bicep
 ```
 
 * Deploy **without email feature**:
 ```bash
 $ az deployment group create --resource-group your-resource-group-name --template-file main.bicep
 ```
-If you want to enable patching report email feature later, just update `SendGridSender` and `SendGridAPIKey` Automation Account variables.
 
-* Deploy **with email feature**:
-```bash
-$ az deployment group create --resource-group MyRg --template-file main.bicep --parameters SendGridSender="no-reply@mydomain.fr" SendGridAPIKey="SG.XXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX"
-```
 Infrastructure deployment will take around 5 minutes and it can take until 20 minutes to have update agent ready and first patching assessment. 
 
-## Limitations
-
-* VMs must have a unique name. It is not possible to have several VMs with the same name using `POLICY_UPDATE` tag.
-* A VM must be part of a single schedule. If it is not the case, *UM-CleanUp-Schedules* has side effects.
-* When the `POLICY_UPDATE` tag is applied, the first patching can be done the day after the execution of *UM-ScheduleUpdatesWithVmsTags*.
 
 
 # Output images
