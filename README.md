@@ -70,7 +70,7 @@ Here is a *partial* screenshot of deployed resources:
 
 # Clone the repo with following command
 
-$ git clone (https://github.com/mastechdom/Azure-vm-update-management-with-tags.git)
+$ git clone https://github.com/mastechdom/Azure-vm-update-management-with-tags.git
 
 ...
 #Then run bicep file to deploye
