@@ -64,7 +64,8 @@ Here is a *partial* screenshot of deployed resources:
 
 **Quick start:**
 
-# Step-by-step user guide [video]()
+Step-by-step user guide [Part 1](https://us05web.zoom.us/clips/share/BHVzMDQgG5b4qm6TZeEBrohDKyWQ9tNNJRBSiuXw38Ofe4BQF7k)
+[Part 2](https://us05web.zoom.us/clips/share/BHVzMDQgoiTes0AggeOFVSbwUJjT6iX8KAp89ra77BqWaquBjN0)
 
 ```bash
 
