@@ -38,7 +38,7 @@ $onboardAzureArcServersEnabled = $true
 $duration = New-TimeSpan -Hours 2
 
 # TimeZone - Can be the IANA ID or the Windows Time Zone ID
-$timezone = "Romance Standard Time" # France - Central European Time
+$timezone = "Indian Standard Time" # India - Central Asia Time
 
 # Deployment Schedule name Prefix. Must be the same used on Updatemanagement-CleanUpSchedules Runbook.
 $schedulePrefix = "ScheduledByTags-"
